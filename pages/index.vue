@@ -22,5 +22,5 @@
 </template>
 
 <script setup>
-useHead({ title: "Look Back - Aaron Hsieh" });
+useHead({ title: "Look Back" });
 </script>
