@@ -8,7 +8,6 @@
         <p class="my-1 text-sm opacity-30">
           {{ doc.publishedAt }}
         </p>
-
         <article
           class="prose-base prose-img:mx-auto prose-img:rounded prose-a:text-red-300 prose-a:dark:text-blue-300
         prose-pre:bg-neutral-700 prose-pre:overflow-x-scroll prose-blockquote:italic prose-blockquote:w-fit prose-blockquote:border-l-4 prose-blockquote:pr-4 
@@ -18,20 +17,10 @@
           </p>
           <ContentRenderer :value="doc" />
         </article>
-        <section>
-          <Giscus host="https://giscus.app" id="comments" repo="irigyano/nuxt3-markdown-blog" repoId="R_kgDOJz5Cwg"
-            category="Announcements" categoryId="DIC_kwDOJz5Cws4CXi-X" mapping="pathname" reactions-enabled="0"
-            emitMetadata="0" inputPosition="top" theme="" lang="zh-TW" async />
-        </section>
-      </template>
-      <template #empty>
-        <h1>Testing Suspense</h1>
+        <GiscusComment />
       </template>
       <template #not-found>{{ navigateTo("/") }} </template>
     </ContentDoc>
   </main>
 </template>
 
-<script setup>
-import Giscus from "@giscus/vue";
-</script>
