@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+  app: { baseURL: "/aaronhs/" },
   modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts"],
   googleFonts: {
     families: {
@@ -10,7 +11,7 @@ export default defineNuxtConfig({
   },
   content: {
     navigation: {
-      fields: ["publishedAt","description"],
+      fields: ["publishedAt", "description"],
     },
     highlight: {
       theme: "monokai",
