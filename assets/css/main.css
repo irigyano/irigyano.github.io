@@ -7,17 +7,22 @@ html {
   overflow-x: hidden;
 }
 
-::-webkit-scrollbar {
-  width: 4px;
+body::-webkit-scrollbar {
+  width: 8px;
   height: 4px;
 }
 
-::-webkit-scrollbar-thumb {
-  background: #ffffff4d;
+body::-webkit-scrollbar-thumb {
+  background: #9393938c;
   border-radius: 10px;
 }
 
-::-webkit-scrollbar-thumb:hover {
-  background: #ffffff7d;
-  border-radius: 10px;
+body::-webkit-scrollbar-thumb:hover {
+  background: #EF4444
+}
+
+@media (prefers-color-scheme: dark) {
+  body::-webkit-scrollbar-thumb:hover {
+    background: #2563EB
+  }
 }
