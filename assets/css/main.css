@@ -2,27 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  width: 100vw;
-  overflow-x: hidden;
-}
-
-body::-webkit-scrollbar {
+* ::-webkit-scrollbar {
   width: 8px;
   height: 4px;
 }
 
-body::-webkit-scrollbar-thumb {
+*::-webkit-scrollbar-thumb {
   background: #9393938c;
   border-radius: 10px;
 }
 
-body::-webkit-scrollbar-thumb:hover {
+*::-webkit-scrollbar-thumb:hover {
   background: #EF4444
 }
 
 @media (prefers-color-scheme: dark) {
-  body::-webkit-scrollbar-thumb:hover {
+  *::-webkit-scrollbar-thumb:hover {
     background: #2563EB
   }
 }
