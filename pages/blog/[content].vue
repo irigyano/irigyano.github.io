@@ -9,7 +9,7 @@
           {{ doc.publishedAt }}
         </p>
         <article
-          class="prose-base prose-img:mx-auto prose-img:rounded prose-a:dark:text-white prose-a:text-black prose-a:font-medium
+          class="prose-base prose-img:mx-auto prose-img:rounded prose-h2:text-red-300 prose-h2:dark:text-blue-400 prose-a:dark:text-white prose-a:text-black prose-a:font-medium
         prose-pre:bg-neutral-700 prose-pre:overflow-x-scroll prose-blockquote:italic prose-blockquote:w-fit prose-blockquote:border-l-4 prose-blockquote:pr-4 
         prose-blockquote:bg-zinc-300 prose-blockquote:dark:bg-zinc-700 prose-blockquote:border-zinc-700 prose-blockquote:dark:border-zinc-300">
           <p>

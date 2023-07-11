@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     },
   },
   content: {
+    markdown: {
+      anchorLinks: false,
+    },
     navigation: {
       fields: ["publishedAt", "description"],
     },
