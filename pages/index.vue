@@ -2,9 +2,13 @@
   <ContentNavigation v-slot="{ navigation }">
     <main class="animate-slide-in flex flex-col gap-10 p-2">
       <div v-for="link of navigation[0].children.sort(
-        (blog1, blog2) =>
-          new Date(blog2.publishedAt).getTime() -
-          new Date(blog1.publishedAt).getTime()
+        (blog1, blog2) => {
+          if (blog1.publishedAt === 'Pinned') return -1
+          return (
+            new Date(blog2.publishedAt).getTime() -
+            new Date(blog1.publishedAt).getTime()
+          )
+        }
       )">
         <NuxtLink class="text-4xl font-semibold text-red-500 dark:text-blue-500 hover:opacity-70 duration-300"
           :key="link._path" :to="link._path">
