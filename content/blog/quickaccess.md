@@ -1,6 +1,7 @@
 ---
 title: Quick Access
 publishedAt: Pinned
+editedAt: July 20, 2023
 description: Resources for learning.
 ---
 
