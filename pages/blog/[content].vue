@@ -6,7 +6,7 @@
           {{ doc.title }}
         </h1>
         <p class="my-1 text-xs opacity-80">
-          {{ doc.publishedAt }}
+          {{ doc.editedAt ? "編輯於 " + doc.editedAt : doc.publishedAt }}
         </p>
         <article
           class="prose-base prose-img:mx-auto prose-img:rounded prose-a:text-red-300 prose-a:dark:text-blue-400

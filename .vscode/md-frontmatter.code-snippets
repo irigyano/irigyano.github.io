@@ -5,6 +5,7 @@
       "---",
       "title: Hello h1",
       "publishedAt: $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR",
+      "editedAt: ",
       "description: p tag",
       "---",
       "",
