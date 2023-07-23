@@ -2,7 +2,7 @@
   <main class="animate-slide-in p-2">
     <ContentDoc>
       <template v-slot="{ doc }">
-        <h1 class="text-4xl font-semibold text-red-400 dark:text-blue-500">
+        <h1 class="text-3xl font-semibold text-red-400 dark:text-blue-500">
           {{ doc.title }}
         </h1>
         <p class="my-1 text-xs opacity-80">
