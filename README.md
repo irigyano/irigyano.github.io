@@ -2,8 +2,9 @@
 
 My little playground for software developer career.
 
-## Feature To Do List
+## TODO
 
+- [ ] OG Meta Tags
 - [ ] Tags
 - [ ] Pagination
 
