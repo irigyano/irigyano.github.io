@@ -7,7 +7,9 @@ My little playground for software developer career.
 - [ ] OG Meta Tags
 - [ ] Tags
 - [ ] Pagination
-
+- [ ] NuxtLink target blank
+- [ ] Dark Mode Toggle
+ 
 ## Development
 
 ```bash

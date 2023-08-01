@@ -1,7 +1,7 @@
 ---
 title: Quick Access
 publishedAt: Pinned
-editedAt: July 20, 2023
+editedAt: August 02, 2023
 description: Resources for learning.
 ---
 
@@ -32,14 +32,6 @@ description: Resources for learning.
 [今晚，我想來點 Web 前端效能優化大補帖！](https://ithelp.ithome.com.tw/users/20113277/ironman/3877)
 
 [JavaScript Visualized: the JavaScript Engine](https://dev.to/lydiahallie/javascript-visualized-the-javascript-engine-4cdf)
-
-## Data Structure / Algorithm
-
-[CS 61A](https://inst.eecs.berkeley.edu/~cs61a/fa22/)
-
-[The Last Algorithms Course You'll Need](https://frontendmasters.com/courses/algorithms/)
-
-[NeetCode](https://neetcode.io/practice)
 
 ## misc
 

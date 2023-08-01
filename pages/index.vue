@@ -3,8 +3,8 @@
     <main class="animate-slide-in flex flex-col gap-10 p-2">
       <div class="flex items-center">
         <a href="https://github.com/irigyano/aaronhs">
-          <picture><img class="w-10 h-10 rounded-full object-cover"
-              src="https://avatars.githubusercontent.com/u/110440243?v=4"></picture>
+          <img alt="avatar" class="w-10 h-10 rounded-full object-cover"
+            src="https://avatars.githubusercontent.com/u/110440243?v=4">
         </a>
         <p class="px-2">Aaron Hsieh Frontend Developer</p>
       </div>

@@ -3,15 +3,13 @@
     "prefix": "markdown frontmatter",
     "body": [
       "---",
-      "title: Hello h1",
+      "title: $TM_FILENAME_BASE",
       "publishedAt: $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR",
       "editedAt: ",
-      "description: p tag",
+      "description: ",
       "---",
       "",
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
-      "",
-      "Perferendis doloremque eum asperiores quidem dicta,"
+      "## h2 starts here",
     ],
     "description": "Blog Frontmatter"
   }
