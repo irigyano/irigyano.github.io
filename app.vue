@@ -12,7 +12,4 @@ useHead({
   htmlAttrs: { lang: "zh-tw" },
   bodyAttrs: { class: "bg-white dark:bg-black text-[#555555] dark:text-[#bbbbbb]" },
 });
-
-// document.documentElement.classList.add('dark');
-
 </script>

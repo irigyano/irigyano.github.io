@@ -1,12 +1,19 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  app: { baseURL: "/aaronhs/" },
+  app: {
+    baseURL: "/aaronhs/",
+    head: {
+      script: [
+        {
+          children:
+            '!function(){let e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}();',
+        },
+      ],
+    },
+  },
   modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts"],
   googleFonts: {
     families: {
       "Noto Sans": true,
-      // "Noto Sans TC": true,
-      // "Noto Sans JP": true,
     },
   },
   content: {
