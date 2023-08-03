@@ -2,7 +2,7 @@
   <section class="animate-slide-in p-2 flex">
     <ContentDoc>
       <template v-slot="{ doc }">
-        <main class="flex-1">
+        <main class="w-full flex-1">
           <h1 class="text-3xl font-semibold text-red-400 dark:text-blue-500">
             {{ doc.title }}
           </h1>
@@ -39,9 +39,9 @@ onMounted(() => {
         activeTocId.value = id
       }
     })
-  }, { threshold: 0.5 })
+  }, { rootMargin: "0px 0px -80% 0px" })
 
-  document.querySelectorAll('#nuxt-content h2[id]').forEach((section) => {
+  document.querySelectorAll('#nuxt-content h2[id], #nuxt-content h3[id]').forEach((section) => {
     observer.value?.observe(section)
   })
 })
