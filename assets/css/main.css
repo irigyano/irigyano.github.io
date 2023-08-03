@@ -1,5 +1,10 @@
 @tailwind base;
 @tailwind components;
+
+.text-heading {
+  @apply text-red-500 dark:text-blue-500 hover:opacity-70 duration-300;
+}
+
 @tailwind utilities;
 
 * ::-webkit-scrollbar {
@@ -13,11 +18,11 @@
 }
 
 *::-webkit-scrollbar-thumb:hover {
-  background: #EF4444
+  background: #ef4444;
 }
 
 @media (prefers-color-scheme: dark) {
   *::-webkit-scrollbar-thumb:hover {
-    background: #2563EB
+    background: #2563eb;
   }
 }
