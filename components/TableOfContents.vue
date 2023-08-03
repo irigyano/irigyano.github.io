@@ -1,8 +1,15 @@
 <template>
-    <aside class="hidden lg:block sticky h-fit top-10">
-        <ul class="flex flex-col pl-2 space-y-1">
-            <li :class="{ 'text-blue-500': activeToc === link.id }" v-for="link of  tocData" :key="link.id">
-                <a :href="`#${link.id}`">{{ link.text }}</a>
+    <aside class="hidden lg:block sticky h-fit top-20">
+        <ul class="flex flex-col pl-4">
+            <li :class="{ 'border-blue-500': activeToc === link.id }" class="pl-2 flex flex-col" v-for="link of  tocData"
+                :key="link.id">
+                <a class="border-l-2 border-current pl-2 leading-7" :class="{ 'text-blue-500': activeToc === link.id }"
+                    :href="`#${link.id}`">{{
+                        link.text
+                    }}</a>
+                <a class="border-l-2 border-current pl-4 text-sm leading-6"
+                    :class="{ 'text-blue-500': activeToc === child.id }" v-for="child of link?.children"
+                    :href="`#${child.id}`">{{ child.text }}</a>
             </li>
         </ul>
     </aside>
