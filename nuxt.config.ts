@@ -5,7 +5,7 @@ export default defineNuxtConfig({
       script: [
         {
           children:
-            '!function(){let e=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches,t=localStorage.getItem("color-scheme")||"auto";("dark"===t||e&&"light"!==t)&&document.documentElement.classList.toggle("dark",!0)}();',
+            'window.matchMedia("(prefers-color-scheme: dark)").matches&&document.documentElement.classList.add("dark");',
         },
       ],
     },
