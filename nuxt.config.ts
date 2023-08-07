@@ -10,7 +10,10 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts"],
+  modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts", "nuxt-svgo"],
+  svgo: {
+    defaultImport: "component",
+  },
   googleFonts: {
     families: {
       "Noto Sans": true,
@@ -28,7 +31,7 @@ export default defineNuxtConfig({
     },
   },
   css: ["~/assets/css/main.css"],
-  devtools: { enabled: true },
+  devtools: { enabled: false },
   postcss: {
     plugins: {
       tailwindcss: {},
