@@ -6,23 +6,3 @@
 }
 
 @tailwind utilities;
-
-* ::-webkit-scrollbar {
-  width: 8px;
-  height: 4px;
-}
-
-*::-webkit-scrollbar-thumb {
-  background: #9393938c;
-  border-radius: 10px;
-}
-
-*::-webkit-scrollbar-thumb:hover {
-  background: #ef4444;
-}
-
-@media (prefers-color-scheme: dark) {
-  *::-webkit-scrollbar-thumb:hover {
-    background: #2563eb;
-  }
-}
