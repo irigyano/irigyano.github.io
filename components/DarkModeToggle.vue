@@ -1,9 +1,17 @@
 <template>
-    <button @click="toggleDark()">
-        <div>{{ isDarkScheme ? 'Dark' : 'Light' }}</div>
+    <button class="relative h-9 rounded-full bg-current" @click="toggleDark()">
+        <div class="flex justify-around items-center w-20">
+            <angelSvg class="h-6"></angelSvg>
+            <devilSvg class="h-6"></devilSvg>
+        </div>
+        <div :class="{ 'translate-x-11': !isDarkScheme }"
+            class="duration-300 absolute top-0 rounded-full h-9 w-9 text-heading bg-current hover:opacity-100">
+        </div>
     </button>
 </template>
 <script setup>
+import devilSvg from '~/assets/icons/devil-svgrepo-com.svg'
+import angelSvg from '~/assets/icons/angel-svgrepo-com.svg'
 const isDarkScheme = ref(document.documentElement.classList.contains('dark'))
 
 onMounted(() => {
