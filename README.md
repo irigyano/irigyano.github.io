@@ -1,14 +1,12 @@
 # Aaron Hsieh's Blog
 
-My little playground for software developer career.
+Personal blog D:
 
 ## TODO
 
 - [ ] OG Meta Tags
 - [ ] Tags
 - [ ] Pagination
-- [ ] NuxtLink target blank
-- [ ] Dark Mode Toggle
 - [ ] Embed Youtube Video
 
 ## Development
