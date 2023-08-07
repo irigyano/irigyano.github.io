@@ -21,7 +21,7 @@ export default defineNuxtConfig({
       anchorLinks: false,
     },
     navigation: {
-      fields: ["publishedAt", "description"],
+      fields: ["publishedAt", "state", "description"],
     },
     highlight: {
       theme: "monokai",

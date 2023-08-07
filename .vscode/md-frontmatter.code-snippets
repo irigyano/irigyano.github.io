@@ -6,10 +6,11 @@
       "title: $TM_FILENAME_BASE",
       "publishedAt: $CURRENT_MONTH_NAME $CURRENT_DATE, $CURRENT_YEAR",
       "editedAt: ",
+      "state: default|Pinned|Hidden",
       "description: ",
       "---",
       "",
-      "## h2 starts here",
+      "## h2 starts here"
     ],
     "description": "Blog Frontmatter"
   }

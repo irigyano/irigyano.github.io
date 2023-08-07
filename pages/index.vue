@@ -1,9 +1,9 @@
 <template>
   <ContentNavigation v-slot="{ navigation }">
     <main class="animate-slide-in flex flex-col gap-10 p-2">
-      <div v-for="link of navigation[0].children.sort(
+      <div v-for="link of navigation[0].children.filter((blog) => blog.state !== 'Hidden').sort(
         (blog1, blog2) => {
-          if (blog1.publishedAt === 'Pinned') return -1
+          if (blog1.state === 'Pinned') return -1
           return (
             new Date(blog2.publishedAt).getTime() -
             new Date(blog1.publishedAt).getTime()
@@ -14,7 +14,7 @@
           {{ link.title }}
         </NuxtLink>
         <div class="w-fit my-1 text-sm opacity-30">
-          {{ link.publishedAt }}
+          {{ link.state === 'Pinned' ? link.state : link.publishedAt }}
         </div>
         <p class="text-sm font-medium max-w-full w-max truncate">
           {{ link.description }}

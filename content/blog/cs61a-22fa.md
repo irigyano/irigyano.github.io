@@ -1,8 +1,9 @@
 ---
 title: CS 61A 2022 Fall Notes
 publishedAt: August 02, 2023
-editedAt: 
-description: 
+editedAt:
+state: Hidden
+description:
 ---
 
 ## [CS 61A 2022 Fall](https://inst.eecs.berkeley.edu/~cs61a/fa22/)
