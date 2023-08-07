@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     },
   },
   modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts"],
+  ssr: false,
   googleFonts: {
     families: {
       "Noto Sans": true,
