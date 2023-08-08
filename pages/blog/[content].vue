@@ -22,7 +22,8 @@
         </main>
         <div class="flex justify-center">
           <TableOfContents class="w-max" :toc="doc.body.toc.links" :activeToc="activeTocId" />
-          <button @click="() => { backToTop() }" class="fixed bottom-20 border-2 border-current rounded-full p-2">
+          <button @click="() => { backToTop() }"
+            class="hidden lg:block fixed bottom-20 border-2 border-current rounded-full p-2">
             <rocketSvg class="h-10"></rocketSvg>
           </button>
         </div>
