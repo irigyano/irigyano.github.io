@@ -17,7 +17,9 @@ const hideNavbar = ref(false)
 onMounted(() => {
   document.addEventListener('scroll', () => {
     const currPos = window.scrollY
-    if (currPos > prevPos.value) {
+    console.log(currPos)
+    // fix: hardcoded
+    if (currPos > prevPos.value && currPos > 50) {
       hideNavbar.value = true
     } else {
       hideNavbar.value = false
