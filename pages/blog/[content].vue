@@ -20,7 +20,12 @@
           </article>
           <GiscusComment />
         </main>
-        <TableOfContents class="w-max" :toc="doc.body.toc.links" :activeToc="activeTocId" />
+        <div class="flex justify-center">
+          <TableOfContents class="w-max" :toc="doc.body.toc.links" :activeToc="activeTocId" />
+          <button @click="() => { backToTop() }" class="fixed bottom-20 border-2 border-current rounded-full p-2">
+            <rocketSvg class="h-10"></rocketSvg>
+          </button>
+        </div>
       </template>
       <template #not-found>{{ navigateTo("/") }} </template>
     </ContentDoc>
@@ -28,6 +33,7 @@
 </template>
 
 <script setup lang="ts">
+import rocketSvg from '~/assets/icons/rocket-svgrepo-com.svg'
 const activeTocId: Ref<string | null> = ref(null)
 const observer: Ref<IntersectionObserver | null> = ref(null)
 
@@ -49,4 +55,8 @@ onMounted(() => {
 onUnmounted(() => {
   observer.value?.disconnect()
 })
+
+function backToTop() {
+  window.scrollTo({ top: 0 })
+}
 </script>
