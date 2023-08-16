@@ -7,7 +7,6 @@ Personal blog D:
 - [ ] OG Meta Tags
 - [ ] Tags
 - [ ] Pagination
-- [ ] Embed Youtube Video
 
 ## Development
 
