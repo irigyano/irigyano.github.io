@@ -6,4 +6,6 @@ state: Hidden
 description:
 ---
 
-## [周志遠教授作業系統](https://www.youtube.com/playlist?list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX)
+## 周志遠教授作業系統
+
+https://www.youtube.com/watch?v=3PfL2WIS22o&list=PLS0SUwlYe8czigQPzgJTH2rJtwm0LXvDX&index=1

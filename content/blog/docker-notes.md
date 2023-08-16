@@ -8,4 +8,4 @@ description:
 
 ## Docker Course Notes
 
-[Complete Docker Course - From BEGINNER to PRO! (Learn Containers)](https://www.youtube.com/watch?v=RqTEHSBrYFw)
+https://www.youtube.com/watch?v=RqTEHSBrYFw
