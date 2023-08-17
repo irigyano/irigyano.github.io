@@ -1,14 +1,13 @@
 @tailwind base;
 @tailwind components;
 
-.text-heading {
-  @apply text-red-500 dark:text-blue-500 hover:opacity-70 duration-300;
-}
-
 @tailwind utilities;
 
 @layer utilities {
   .prose-iframe :where(iframe):not(:where([class~="not-prose"] *)) {
     @apply aspect-video w-full h-auto;
+  }
+  .text-heading {
+    @apply text-red-500 dark:text-blue-500 hover:opacity-70 duration-300;
   }
 }

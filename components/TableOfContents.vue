@@ -2,11 +2,11 @@
     <aside class="hidden lg:block sticky h-fit top-20">
         <ul class="flex flex-col pl-4">
             <li class="pl-2 flex flex-col" v-for="link of  tocData" :key="link.id">
-                <a class="border-l-2 border-current pl-2 leading-7" :class="{ 'text-heading': activeToc === link.id }"
-                    :href="`#${link.id}`">{{
+                <a class="hover:text-heading border-l-2 border-current pl-2 leading-7"
+                    :class="{ 'text-heading': activeToc === link.id }" :href="`#${link.id}`">{{
                         link.text
                     }}</a>
-                <a class="border-l-2 border-current pl-4 text-sm leading-6"
+                <a class="hover:text-heading border-l-2 border-current pl-4 text-sm leading-6"
                     :class="{ 'text-heading': activeToc === child.id }" v-for="child of link?.children"
                     :href="`#${child.id}`">{{ child.text }}</a>
             </li>
