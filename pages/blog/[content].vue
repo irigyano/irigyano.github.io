@@ -20,12 +20,8 @@
           </article>
           <GiscusComment />
         </main>
-        <div class="flex justify-center">
+        <div class="flex justify-center max-w-[30%]">
           <TableOfContents class="w-max" :toc="doc.body.toc.links" :activeToc="activeTocId" />
-          <button @click="() => { backToTop() }"
-            class="hidden lg:block fixed bottom-20 border-2 border-current rounded-full p-2">
-            <rocketSvg class="h-10"></rocketSvg>
-          </button>
         </div>
       </template>
       <template #not-found>{{ navigateTo("/") }} </template>
@@ -35,7 +31,6 @@
 
 <script setup lang="ts">
 import { useYoutubeLink } from "~/composables/useYoutubeLink";
-import rocketSvg from '~/assets/icons/rocket-svgrepo-com.svg'
 const activeTocId: Ref<string | null> = ref(null)
 const observer: Ref<IntersectionObserver | null> = ref(null)
 
@@ -49,18 +44,14 @@ onMounted(() => {
         activeTocId.value = id
       }
     })
-  }, { rootMargin: "0px 0px -80% 0px" })
+  }, { rootMargin: "0px 0px -90% 0px" })
 
-  document.querySelectorAll('#nuxt-content h2[id], #nuxt-content h3[id]').forEach((section) => {
-    observer.value?.observe(section)
+  document.querySelectorAll('#nuxt-content h2[id], #nuxt-content h3[id]').forEach((title) => {
+    observer.value?.observe(title)
   })
 })
 
 onUnmounted(() => {
   observer.value?.disconnect()
 })
-
-function backToTop() {
-  window.scrollTo({ top: 0 })
-}
 </script>
