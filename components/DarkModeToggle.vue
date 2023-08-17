@@ -12,9 +12,10 @@
 <script setup>
 import devilSvg from '~/assets/icons/devil-svgrepo-com.svg'
 import angelSvg from '~/assets/icons/angel-svgrepo-com.svg'
-const isDarkScheme = ref(document.documentElement.classList.contains('dark'))
+const isDarkScheme = ref()
 
 onMounted(() => {
+    isDarkScheme.value = document.documentElement.classList.contains('dark')
     const observer = new MutationObserver((mutationRecord) => {
         for (let mutation of mutationRecord) {
             if (mutation.target.className === 'dark') return isDarkScheme.value = true
