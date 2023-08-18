@@ -10,7 +10,7 @@
             {{ doc.editedAt ? "編輯於 " + doc.editedAt : doc.publishedAt }}
           </p>
           <article
-            class="prose-iframe prose-base prose-img:mx-auto prose-img:rounded prose-a:text-red-300 prose-a:dark:text-blue-400 prose-h2:font-extrabold prose-h3:font-bold
+            class="prose-ol:list-decimal prose-iframe prose-base prose-img:mx-auto prose-img:rounded prose-a:text-red-300 prose-a:dark:text-blue-400 prose-h2:font-extrabold prose-h3:font-bold
             prose-pre:bg-neutral-700 prose-pre:overflow-x-scroll prose-pre:scrollbar-thin prose-blockquote:italic prose-blockquote:w-fit prose-blockquote:border-l-4 prose-blockquote:pr-4 
             prose-blockquote:bg-zinc-300 prose-blockquote:dark:bg-zinc-700 prose-blockquote:border-zinc-700 prose-blockquote:dark:border-zinc-300">
             <p>
