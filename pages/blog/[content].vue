@@ -30,13 +30,10 @@
 </template>
 
 <script setup lang="ts">
-import { useYoutubeLink } from "~/composables/useYoutubeLink";
 const activeTocId: Ref<string | null> = ref(null)
 const observer: Ref<IntersectionObserver | null> = ref(null)
 
 onMounted(() => {
-  useYoutubeLink("nuxt-content");
-
   observer.value = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
       const id = entry.target.getAttribute('id')
