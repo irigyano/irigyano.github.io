@@ -1,11 +1,12 @@
 # Aaron Hsieh's Blog
 
-Personal blog D:
+Markdown-driven blog built with Nuxt 3, Nuxt Content and Tailwind CSS.
 
 ## TODO
 
-- [ ] OG Meta Tags
-- [ ] Tags
+- [ ] Image optimization
+- [ ] OG meta tags
+- [ ] Category tags
 - [ ] Pagination
 
 ## Development
