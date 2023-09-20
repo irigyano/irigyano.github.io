@@ -4,7 +4,6 @@
       © {{ new Date().getFullYear() }}, Built with
       <a class="text-green-600 font-bold hover:opacity-70 duration-300" href="https://nuxt.com/">Nuxt</a>
     </div>
-    <a class="text-slate-600 font-bold hover:opacity-70 duration-300"
-      href="https://github.com/irigyano/aaronhs">GitHub</a>
+    <a class="text-slate-600 font-bold hover:opacity-70 duration-300" href="https://github.com/hsiean/aaronhs">GitHub</a>
   </footer>
 </template>

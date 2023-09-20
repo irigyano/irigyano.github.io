@@ -27,5 +27,5 @@
 </template>
 
 <script setup>
-useHead({ title: "Look Back" });
+useHead({ title: "IT depends" });
 </script>
