@@ -20,8 +20,8 @@
           </article>
           <GiscusComment />
         </main>
-        <div class="flex justify-center max-w-[30%]">
-          <TableOfContents class="w-max" :toc="doc.body.toc.links" :activeToc="activeTocId" />
+        <div class="flex justify-center max-w-[25%]">
+          <TableOfContents :toc="doc.body.toc.links" :activeToc="activeTocId" />
         </div>
       </template>
       <template #not-found>{{ navigateTo("/") }} </template>
@@ -41,7 +41,7 @@ onMounted(() => {
         activeTocId.value = id
       }
     })
-  }, { rootMargin: "0px 0px -90% 0px" })
+  }, { rootMargin: "0px 0px -80% 0px" })
 
   document.querySelectorAll('#nuxt-content h2[id], #nuxt-content h3[id]').forEach((title) => {
     observer.value?.observe(title)

@@ -27,5 +27,8 @@
 </template>
 
 <script setup>
-useHead({ title: "IT depends" });
+useHead({
+  title: "",
+  meta: [{ name: 'description', content: "Software stuff, mainly focusing on the web development." }]
+});
 </script>

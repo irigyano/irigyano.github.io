@@ -1,13 +1,10 @@
-# Aaron Hsieh's Blog
-
-Markdown-driven blog built with Nuxt 3, Nuxt Content and Tailwind CSS.
-
 ## TODO
 
-- [ ] Image optimization
+- [ ] Fix image layout shifting
 - [ ] OG meta tags
 - [ ] Category tags
 - [ ] Pagination
+- [ ] Copy button for code
 
 ## Development
 

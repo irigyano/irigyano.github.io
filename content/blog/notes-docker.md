@@ -1,9 +1,9 @@
 ---
-title: Docker 筆記 🐳（WIP）
-publishedAt: September 05, 1990
+title: Docker 🐳 筆記
+publishedAt:
 editedAt:
 state: default
-description: Notes for Docker crash course from DevOps Directive
+description:
 ---
 
 ## TL;DR
