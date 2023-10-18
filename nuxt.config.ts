@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: "/aaronhs/",
+    baseURL: "/irigyano/",
     head: {
       script: [
         {
@@ -10,7 +10,12 @@ export default defineNuxtConfig({
       ],
     },
   },
-  modules: ["nuxt-content-assets", "@nuxt/content", "@nuxtjs/google-fonts", "nuxt-svgo"],
+  modules: [
+    "nuxt-content-assets",
+    "@nuxt/content",
+    "@nuxtjs/google-fonts",
+    "nuxt-svgo",
+  ],
   svgo: {
     defaultImport: "component",
   },
