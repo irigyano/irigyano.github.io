@@ -1,6 +1,6 @@
 export default defineNuxtConfig({
   app: {
-    baseURL: "/irigyano/",
+    baseURL: "/pepeNotes/",
     head: {
       script: [
         {
