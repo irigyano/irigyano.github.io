@@ -46,4 +46,4 @@ description: stuff I never finish reading/understanding.
 
 [Does everything in computer run on an event loop?](https://www.reddit.com/r/compsci/comments/14u1wkj/does_everything_in_computer_run_on_an_event_loop/)
 
-https://www.youtube.com/watch?v=BkHdmAhapws
+![saul](/images/saul.webp)
