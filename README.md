@@ -5,6 +5,7 @@
 - [ ] Category tags
 - [ ] Pagination
 - [ ] Copy button for code
+- [ ] GitHub Action deployment
 
 ## Development
 

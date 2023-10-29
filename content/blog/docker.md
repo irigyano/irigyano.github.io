@@ -41,7 +41,7 @@ container 即是透過 image instantiate 的實體。
 
 根據[官方文件](https://docs.docker.com/storage/volumes/)推薦使用 Volumes，相較於 bind 更加穩定、快速。將資料儲存在由 Docker daemon 管理的特定位置，以 WSL2 環境為例是儲存於：
 
-```powershell
+```ps1
  wsl$\docker-desktop-data\data\docker\volumes
 ```
 

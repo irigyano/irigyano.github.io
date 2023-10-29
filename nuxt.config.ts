@@ -32,7 +32,10 @@ export default defineNuxtConfig({
       fields: ["publishedAt", "state", "description"],
     },
     highlight: {
-      theme: "monokai",
+      preload: ["ps", "ps1"],
+      theme: {
+        default: "github-dark",
+      },
     },
   },
   css: ["~/assets/css/main.css"],
