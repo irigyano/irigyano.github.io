@@ -1,6 +1,6 @@
 <template>
     <!-- SSR causing flick -->
-    <button class="relative" @click="toggleDark()">
+    <button alt="toggle-darkmode" class="relative" @click="toggleDark()">
         <devilSvg v-if="isDarkScheme" class="h-10"></devilSvg>
         <angelSvg v-if="!isDarkScheme" class="h-10"></angelSvg>
     </button>

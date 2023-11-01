@@ -15,7 +15,7 @@
         <NuxtLink class="text-3xl font-semibold text-heading" :key="link._path" :to="link._path">
           {{ link.title }}
         </NuxtLink>
-        <div class="w-fit my-1 text-sm opacity-30">
+        <div class="w-fit my-1 text-sm opacity-70">
           {{ link.state === 'Pinned' ? link.state : link.publishedAt }}
         </div>
         <p class="text-sm font-medium max-w-full w-max truncate">
