@@ -4,10 +4,9 @@
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
-    "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "deploy": "nuxt generate && gh-pages --dotfiles -d .output/public -t true",
+    "generate": "nuxt generate",
     "publish": "gh-pages --dotfiles -d .output/public -t true"
   },
   "devDependencies": {
