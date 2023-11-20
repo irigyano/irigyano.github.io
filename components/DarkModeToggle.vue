@@ -1,7 +1,7 @@
 <template>
-    <button alt="toggle-darkmode" class="relative flex" @click="toggleDark()">
+    <button alt="toggle-darkmode" @click="toggleDark()">
         <angelSvg class="h-10 absolute dark:scale-0"></angelSvg>
-        <devilSvg class="h-10 absolute scale-0 dark:scale-100"></devilSvg>
+        <devilSvg class="h-10 scale-0 dark:scale-100"></devilSvg>
     </button>
 </template>
 <script setup>
