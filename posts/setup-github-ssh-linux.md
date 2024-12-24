@@ -13,7 +13,7 @@ ssh-keygen -t ed25519 -C "your_email@example.com"
 2. Active SSH Agent session
 
 ```sh
-eval "$(ssh-agent) -s"
+eval "$(ssh-agent -s)"
 ```
 
 3. Adding Generated Key to Agent
